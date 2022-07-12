@@ -1,0 +1,150 @@
+$primary-color: #eff3f5;
+$secundary-color: #04B2D9;
+$third-color: #18187b;
+
+
+/**** Estilos Reset ****/
+@font-face{
+    font-family: "roboto";
+    src: url(./assets/Roboto-Light.ttf);
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #eff3f5 ;
+    font-family: "roboto";
+    font-size: 16px;
+}
+/****  Estilos Cabecera ****/
+
+.nav-container {
+    width: 100%;
+    /* max-width: 1200px; */
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #04B2D9;
+    color: white;
+    position: fixed;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.link-logo_home {
+    max-width: 20%;
+}
+.logo{
+    width: 100%;
+}
+.nav_header ul {
+    list-style: none;
+    font-family: "roboto";
+    a {
+        text-decoration: none;
+        color: white;
+    } 
+    li {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+    :hover{
+        text-decoration: underline white;
+    }
+    :active{
+    color: #333ed9;
+}
+}
+/**** Estilos del main ****/
+.main-container {
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 70px;
+    display: flex;
+    
+}
+/**** Estilos del Foooter ****/
+.footer {
+    width: 100%;
+    padding:30px;
+    background-color: $secundary-color;
+
+}
+
+.f-superior{
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+.f-superior_izquierda {
+    width: 50%;
+    .f-logo{
+        width: 100%
+    }
+}
+.f-superior_centro {
+ width: 100%;
+ text-align: center;
+}
+.f-superior_derecha  {
+    width: 100%;
+    display: flex;
+    .f-superior_iconos {
+        max-width: 33.3%;
+    }
+    
+ h3 {
+     display: inline-block;
+ }
+}
+.f-inferior {
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 767px){
+    
+    .nav-container{
+       width: 100%;
+       display: flex;
+       justify-content: column;
+       flex-wrap: wrap;
+    }
+    .link-logo_home {
+        min-width: 50%;
+        display: block;   
+    }
+    .logo{
+        display: block;
+    }
+    .nav_header ul {
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: white;
+        } 
+        li {
+            display: block;
+            margin: 5px 10px;
+            padding:5px;
+        }
+        :hover{
+            text-decoration: underline white;
+            display: none;
+        }
+    }
+    .main-container {
+        width: 100%;
+        margin-top: 100px;
+        padding-top: 100px;
+        
+    }
+    
+}
